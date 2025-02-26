@@ -5,7 +5,7 @@ from matplotlib.colors import ListedColormap
 
 # Parâmetros
 dim = 50  # Tamanho da grade
-taxa_regeneracao = 0.1  # chance de regeneração de uma célula vazia
+taxa_regeneracao = 0.2  # chance de regeneração de uma célula vazia
 taxa_queimada = 0.05  # chance de uma árvore pegar fogo
 
 # 0: vazio, 1: vegetação, 2: fogo
@@ -43,7 +43,7 @@ def animar():
         img.set_array(grade)
         step_text.set_text(f'Step: {step}')
         step += 1
-        plt.pause(0.1)
+        plt.pause(0.2)
 
 animar()
 plt.ioff()
